@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP.Models
+namespace OOP.Models.Base
 {
-    internal class BaseIdName
+    internal class NameAuditableEnitity : BaseEntity
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+
+        public  string Name { get; set; }
     }
 }

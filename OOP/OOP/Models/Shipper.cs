@@ -3,13 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OOP.Models.Base;
 
 namespace OOP.Models
 {
-    internal class Shipper:BaseIdName
+    internal class Shipper:NameAuditableEnitity
     {
-        
-        
+
+       
         public string Phone { get; set; }
+        public Shipper() { }
+        public Shipper( string name, string phone)
+        {
+            
+            base.Name = name;
+            this.Phone = phone;
+        }
+        public void Update( string name, string phone)
+        {
+            
+            this.Name = name;
+            this.Phone = phone;
+        }
     }
 }
