@@ -13,9 +13,9 @@ namespace OOP.Models
        
         public string Phone { get; set; }
         public Shipper() { }
-        public Shipper( string name, string phone)
+        public Shipper(int id, string name, string phone)
         {
-            
+            base.Id = id;
             base.Name = name;
             this.Phone = phone;
         }

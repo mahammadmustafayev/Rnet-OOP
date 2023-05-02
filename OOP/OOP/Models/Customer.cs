@@ -22,8 +22,9 @@ namespace OOP.Models
         {
 
         }
-        public Customer(string firstName, string lastName)
+        public Customer(int id,string firstName, string lastName)
         {
+            base.Id = id;
             this.FirstName = firstName;
             this.LastName = lastName;
         }

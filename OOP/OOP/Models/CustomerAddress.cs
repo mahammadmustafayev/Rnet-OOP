@@ -27,8 +27,9 @@ namespace OOP.Models
         {
 
         }
-        public CustomerAddress(string title, string country, string city, string town, string street, string building, int no)
+        public CustomerAddress(int id,string title, string country, string city, string town, string street, string building, int no)
         {
+            base.Id = id;
             base.Title = title;
             this.Country = country;
             this.City = city;

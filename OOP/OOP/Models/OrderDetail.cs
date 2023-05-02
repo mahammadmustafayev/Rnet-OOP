@@ -25,8 +25,9 @@ namespace OOP.Models
         {
 
         }
-        public OrderDetail(int orderId, int productId, double price, int count, int discount)
+        public OrderDetail(int id,int orderId, int productId, double price, int count, int discount)
         {
+            base.Id = id;
             this.OrderId = orderId;
             this.ProductId = productId;
             this.Price = price;

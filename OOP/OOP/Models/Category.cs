@@ -20,8 +20,9 @@ namespace OOP.Models
         {
 
         }
-        public Category(string name, string description)
+        public Category(int id,string name, string description)
         {
+            base.Id = id;
             base.Name = name;
             this.Description = description;
         } 

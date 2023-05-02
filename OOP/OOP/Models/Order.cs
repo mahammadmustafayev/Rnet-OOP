@@ -27,8 +27,9 @@ namespace OOP.Models
         {
 
         }
-        public Order(int customerId, DateTime orderDate, DateTime deliveredDate, int shipperId, int customerAdderessId, bool status)
+        public Order(int id,int customerId, DateTime orderDate, DateTime deliveredDate, int shipperId, int customerAdderessId, bool status)
         {
+            base.Id = id;
             this.CustomerId = customerId;
             this.OrderDate = orderDate;
             this.DeliveredDate = deliveredDate;

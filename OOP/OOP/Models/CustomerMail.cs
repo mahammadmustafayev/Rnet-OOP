@@ -20,9 +20,9 @@ namespace OOP.Models
         {
 
         }
-        public CustomerMail(string title, string mail)
+        public CustomerMail(int id,string title, string mail)
         {
-
+            base.Id = id;
             base.Title = title;
             this.Mail = mail;
         }

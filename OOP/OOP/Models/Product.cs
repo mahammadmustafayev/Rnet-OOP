@@ -18,8 +18,9 @@ namespace OOP.Models
         public List<OrderDetail> OrderDetails { get; set; }
         #region Constructor
         public Product() { }
-        public Product(string name, double price, int amount, int unitsInStock)
+        public Product(int id, string name, double price, int amount, int unitsInStock)
         {
+            base.Id= id;
             base.Name = name;
             this.Price = price;
             this.Amount = amount;

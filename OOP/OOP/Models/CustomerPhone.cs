@@ -22,8 +22,9 @@ namespace OOP.Models
         {
 
         }
-        public CustomerPhone(string title, string areaCode, string number)
+        public CustomerPhone(int id,string title, string areaCode, string number)
         {
+            base.Id = id;
             base.Title = title;
             this.AreaCode = areaCode;
             this.Number = number;
